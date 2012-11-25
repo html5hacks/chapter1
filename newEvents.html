@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 Hacks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+
+        .contact li {
+            list-style: none;
+        }
+    </style>
+    <link href="docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="docs/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
+    
+    <!-- css for example -->
+    <style>
+    input[type=number]{border: 2px solid green}
+    input:invalid {border: 2px solid red}
+    </style>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">HTML5 Hacks: Semantics</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class=""><a href="list.html">Custom Data and JS Event Delegate</a></li>
+              <li class=""><a href="microdata.html">MicroData</a></li>
+              <li class=""><a href="formEls.html">New Form Elements</a></li>
+              <li class=""><a href="formValidation.html">Form Validation</a></li>
+              <li class="active"><a href="newEvents.html">New Events</a></li>
+              <li class=""><a href="input.html">Input</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+    <h1>Hacking the Events, New DOM Events</h1>
+    <p>Enter a number outside of the range to see the "invalid" event fire off the alert</p>
+      
+   <!-- markup from example -->  
+    <form name="myForm">
+      Pick a number, any number between 1 and 5: <input type="number" name="quantity" min="1" max="5" /> <br />
+      <input type="submit" name="mySubmit" />
+    </form>
+     
+     <!--js from example -->
+     <script>
+     document.myForm.quantity.addEventListener('input', function(e){this.checkValidity()}, false);
+
+    document.myForm.quantity.addEventListener('invalid', function(e){
+    alert('Your Number needs to be between 1 and five, you choose '+this.value+'.')
+    }, false);  
+     
+     </script>
+     
+     
+     
+    </div> <!-- /container -->
+    
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="docs/assets/js/jquery.js"></script>
+    <script src="docs/assets/js/bootstrap-transition.js"></script>
+    <script src="docs/assets/js/bootstrap-alert.js"></script>
+    <script src="docs/assets/js/bootstrap-modal.js"></script>
+    <script src="docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="docs/assets/js/bootstrap-tab.js"></script>
+    <script src="docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="docs/assets/js/bootstrap-popover.js"></script>
+    <script src="docs/assets/js/bootstrap-button.js"></script>
+    <script src="docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="docs/assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

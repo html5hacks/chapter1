@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="docs/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">HTML5 Hacks</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="list.html">Custom Data and JS Event Delegate</a></li>
+              <li class="active"><a href="microdata.html">Custom Data and JS Event Delegate</a></li>
+              <li class="active"><a href="formEls.html">New Form Elements</a></li>
+              <li class="active"><a href="formValidation.html">Form Validation</a></li>
+              <li class="active"><a href="newForm.html">New Form Elements</a></li>
+              <li class="active"><a href="newEvents.html">New Events</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h1>The Reboot of the Input Tag (HTML5 Input Tag)</h1>
+      <p>New form elements in one form:</p>
+      
+     
+     <form action="demo_form.asp" name="myForm" autocomplete="on" class="well">
+  First name:<input type="text" name="fname" /><br />
+  Last name: <input type="text" name="lname" /><br />
+  E-mail: <input type="email" name="email"  /><br />
+  Telephone: <input type="tel" name="phone" required /><br />
+  Favorite Animal:  <input type="text" name="animal" list="animals" /><br />
+  ID Number:  <input placeholder="enter your 5 digit id number" type="text" name="idNumber" pattern="[0-9]{5}" /><br />
+  <datalist id="animals">
+   <option value="Dog">
+   <option value="Dolphin">
+   <option value="Duck">
+   <option value="Cat">
+   <option value="Bird">
+   <option value="mouse">
+  </datalist>
+
+  <input type="submit" form="myForm"  />
+     
+
+
+</form>
+     
+     
+     
+     
+     
+    </div> <!-- /container -->
+    
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="docs/assets/js/jquery.js"></script>
+    <script src="docs/assets/js/bootstrap-transition.js"></script>
+    <script src="docs/assets/js/bootstrap-alert.js"></script>
+    <script src="docs/assets/js/bootstrap-modal.js"></script>
+    <script src="docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="docs/assets/js/bootstrap-tab.js"></script>
+    <script src="docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="docs/assets/js/bootstrap-popover.js"></script>
+    <script src="docs/assets/js/bootstrap-button.js"></script>
+    <script src="docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="docs/assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
